@@ -49,7 +49,7 @@ namespace PureMVC.Core
             if (instance != null) throw new Exception(Singleton_MSG);
             instance = this;
             proxyMap = new ConcurrentDictionary<string, IProxy>();
-            InitializeModel();
+            InitializeModel();//initialize Model
         }
 
         /// <summary>
